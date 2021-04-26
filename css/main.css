@@ -1,0 +1,3170 @@
+body {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 15px;
+    margin: 0 auto;
+    padding: 0;
+    color: #47484B;
+    position: relative;
+    overflow-x: hidden;
+    background: #FDFDFD;
+    padding-bottom: 50px;
+    scroll-behavior: smooth;
+    
+}
+div, p, input, button, form, span, a, ul, li {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;   
+    font-weight: 600;
+    color: #47484B;
+}
+.container {
+    margin: 0 auto;
+    padding: 0;
+    width: 1170px;
+}
+
+#popap_mebel_m {
+    display: none;
+}
+/* humburger */
+body.no-scroll {
+    overflow: hidden;
+}
+.section-ot {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 100%;
+}
+.section-in {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+.navigation {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background: #ffffff;
+    border-top: 1px solid #C4C4C4;
+    transition: all .5s ease;
+    z-index: 100;
+    overflow: hidden;
+}
+.navigation.open {
+    left: 0%;
+}
+.navigation a {
+    color: #202020;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 90px;
+}
+.navigation a:hover {
+    color: #2D94F3;
+}
+.hamburglar {
+    right: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    margin: 0;
+    position: fixed;
+    top: 80px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    z-index: 999;
+    margin-right: 15px;
+    display: none;
+}
+.hamburglar svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#hamburgertop, #hamburgerbottom {
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 30px;
+    border-radius: 50px;
+    background: #1d1d1d;
+}
+#hamburgertop {
+    top: 12px;
+    right: 10px;
+}
+#hamburgerbottom {
+    top: 34px;
+    right: 10px;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+#hamburgertop, #hamburgerbottom {
+    -webkit-transform-origin: 31px 2px;
+    transform-origin: 31px 2px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: all 500ms cubic-bezier(0.8, -1.1, 0.5, 1.9);
+    transition: all 500ms cubic-bezier(0.8, -1.1, 0.5, 1.9);
+}
+#hamburgercircle {
+    stroke-width: 5;
+    fill: none;
+    stroke:  #1d1d1d;
+    stroke-linecap: round;
+    stroke-linejoin:round;
+    stroke-miterlimit:10;
+    stroke-dasharray: 0 100 33 300;
+    stroke-dashoffset: 101;
+    -webkit-transition: all 750ms ease;
+    transition: all 750ms ease;
+}
+.hamburglar.is-open #hamburgercircle {
+    stroke-dasharray: 1 100 190 300;
+    stroke-dashoffset: 1;
+}
+.hamburglar.is-open #hamburgertop {
+    -webkit-transform: translateX(-4.5px) rotate(-45deg);
+    transform: translateX(-4.5px) rotate(-45deg);
+}
+.hamburglar.is-open #hamburgerbottom {
+    -webkit-transform: translateX(-4.5px) rotate(45deg);
+    transform: translateX(-4.5px) rotate(45deg);
+}
+/* humburger end */
+.vibor_mebel_ip {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+}
+.menu_1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.zvonok {
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    background: none;
+    padding: 7px 13px;
+    border: 1px solid #47484B;
+    box-sizing: border-box;
+    color: #47484B;
+    margin-left: 80px;
+}
+.shop_shering {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 117.18%;
+    color: #47484B;
+    background: none;
+    padding: 12px;
+    border-left: 5px solid #47484B;
+}
+.logo>img {
+    width: 293px;
+    margin-left: 30px;
+    height: 90px;
+}
+.adres_text {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 117.18%;
+    width: 185px;
+    color: #47484B;
+}
+.block_adres {
+    display: flex;
+    align-items: center;
+}
+.adres_text_b {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+}
+.adress {
+    margin: 0;
+    margin-right: 10px;
+}
+.menu_wraper {
+    background: #EBEBEB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -13px;
+}
+.menu>ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.menu>ul>li {
+    list-style: none;
+    position: relative;
+}
+.menu_item {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    color: #47484B;
+    padding: 17px 40px;
+    margin: 0;
+    margin-right: 20px;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #47484b00;
+}
+.menu_item:hover {
+    transition: all 0.3s ease-in-out;
+    border-left: 2px solid #47484B;
+    border-right: 2px solid #47484B;
+    background: #ffffff;
+}
+
+.vlogddeniy {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 44px;
+    padding: 0;
+    width: 300px;
+    transition: all 0.3s ease-in-out;
+}
+.menu>ul>li:hover .menu_item_vloj {
+    transition: all 0.3s ease-in-out;
+    display: flex;
+}
+.vlogddeniy>li {
+    list-style: none;
+    padding: 0;
+    z-index: 90;
+}
+.menu_item_vloj {
+    text-align: center;
+    background: #EBEBEB;
+    z-index: 90;
+    font-size: 16px;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 350px;
+    height: 70px;
+    text-align: left;
+    padding-left: 20px;
+    transition: all 0.3s ease-in-out;
+    display: none;
+}
+label {
+    text-align: center;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 9px;
+}
+input[type="submit"]:disabled {
+    opacity: .5;
+    }
+.wr_li {
+    display: flex;
+    align-items: center;
+}
+.whatsapp_text {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    margin-left: 20px;
+    color: #47484B;
+}
+h1 {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 55px;
+    letter-spacing: 0.035em;
+    width: 774px;
+    margin: 0;
+    margin-bottom: 30px;
+    position: relative;
+}
+.line_ofer {
+    position: absolute;
+    width: 130px;
+    height: 26px;
+    background: #FECD4B;
+    top: -60px;
+    left: -50px;
+}
+.opis_h1 {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    width: 457px;
+    margin: 0;
+    margin-bottom: 60px;
+}
+.btn {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 17px 11px;
+    background: linear-gradient(180deg, #FECD4B 0%, #A57800 100%);
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px;
+}
+.wrapr_btn {
+    position: relative;
+    width: 470px;
+}
+.btn:hover {
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(180deg, #FECD4B 0%, #5C4402 100%);
+}
+.ili {
+    position: absolute;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 82px;
+    color: rgba(254, 205, 75, 0.42);
+    bottom: -90px;
+    right: 190px;
+}
+.ili_btn {
+    position: absolute;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+    border-bottom: 3px solid #FECD4B;
+    bottom: -90px;
+    right: 80px;
+}
+.wraper_ofer {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+.twentytwenty-container {
+    right: 100px;
+    z-index: -99;
+    width: 1000px;
+    margin-left: -260px;
+    top: 50px;
+}
+.twentytwenty-container img {
+    max-width: 200% !important;
+    width: 950px !important;
+}
+.twentytwenty-overlay:hover {
+    background: none !important;
+}
+.podlojka {
+    position: absolute;
+    z-index: -99;
+    right: 130px;
+    width: 900px;
+    top: 130px;
+}
+h2 {
+    position: relative;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 41px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.h2_ceni {
+    margin-top: 120px;
+}
+.line {
+    position: absolute;
+    bottom: -30px;
+    width: 85px;
+    height: 7px;
+    background: #FECD4B;
+}
+.wraper_line_uslugi {
+    margin-bottom: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.block_usluga_one {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
+    padding: 21px;
+    width: 605px;
+    margin: 0;
+    margin: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.block_usluga_one:hover {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.515);
+}
+.opis_img {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 23px;
+    width: 355px;
+    margin-left: 30px;
+}
+.btn_usluga_k {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 91.18%;
+    color: #47484B;
+}
+.uslugi {
+    position: relative;
+}
+.ugol, .ugol_rotate {
+    position: absolute;
+}
+.ugol {
+    bottom: 0px;
+    right: 120px;
+}
+.ugol_rotate {
+    transform: rotate(180deg);
+    top: -180px;
+    left: 20px;
+}
+.btn_uslugi {
+    font-size: 20px;
+    line-height: 27px;
+    padding: 15px 40px;
+    margin: 0 auto;
+    display: table;
+    margin-top: 120px;
+}
+.wraper_ceni {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.block_one_ceni {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px 0 20px;
+    width: 326px;
+    height: 283px;
+    position: relative;
+    margin: 0;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in-out;
+}
+.block_one_ceni:hover,
+.block_one_prichina:hover {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.515);
+}
+.cena_actin {
+    position: absolute;
+    bottom: 23px;
+    right: 23px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 91.18%;
+    text-align: center;
+    color: #FECD4B;
+}
+.opis_cena {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 23px;
+    text-align: center;
+    width: 255px;
+}
+.cena_img_kr {
+    margin-top: -17px;
+}
+.opis_cena_divan {
+    margin: 0;
+    margin-top: 55px;
+}
+.ceni {
+    position: relative;
+}
+.podlojka_cena, .podlojka_kreslo, .dostupno, .btn_cena, .strujka {
+    position: absolute;
+}
+.podlojka_cena {
+    top: 150px;
+    left: 0;
+}
+.podlojka_kreslo {
+    top: 450px;
+    left: 170px;
+}
+.dostupno {
+    top: 150px;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 109px;
+    color: rgba(255, 255, 255, 0.49);
+    left: 180px;
+}
+.btn_cena {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #444444;
+    padding: 15px 53px;
+    background: linear-gradient(180deg, #FECD4B 0%, #FFFFFF 100%);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    bottom: 40px;
+    left: 500px;
+    transition: all 0.3s ease-in-out;
+}
+.btn_cena:hover {
+    transition: all 0.3s ease-in-out;
+    color: #ffffff;
+    background: linear-gradient(180deg, #FECD4B 0%, #5e5e5e 100%);
+
+}
+.strujka {
+    top: -80px;
+    left: 210px;
+}
+.six {
+    position: absolute;
+    top: -120px;
+    font-weight: 800;
+    font-size: 200px;
+    line-height: 272px;
+    color: rgba(91, 68, 4, 0.15);
+    left: -60px;
+}
+.block_wraper_ {
+    display: flex;
+    align-items: center;
+}
+.block_one_prichina {
+    width: 189px;
+    height: 144px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 10px rgba(85, 62, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin: 8px;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.opis_prichina {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+    width: 100%;
+}
+.opis_prichina_mebel {
+    margin-top: -4px;
+}
+.block_zayavka_prichina {
+    width: 370px;
+    height: auto;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 10px;
+}
+.block_zayabka {
+    width: 99%;
+    height: 99%;
+    border: 1px solid #8E8E8E;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+h3 {
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 34px;
+    text-align: center;
+    width: 100%;
+}
+.opis_h3_zayavka {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #B7B7B7;
+    width: 100%;
+}
+.form_input {
+    border: none;
+    outline: none;
+    width: 309px;
+    height: 54px;
+    background: #E5E5E5;
+    border-radius: 20px;
+    padding-left: 16px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 21px;
+}
+.form_input::placeholder {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 118.18%;
+    color: #C6C6C6;
+}
+.btn_form {
+    border: none;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 18px 35px;
+    display: block;
+    align-items: center;
+    outline: none;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.block_zayabka {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 54px;
+}
+.wraper_prichina {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.block_zayavka_prichina {
+    margin: 0;
+    margin-left: 185px;
+    position: relative;
+}
+.ugol_zayanka {
+    position: absolute;
+    bottom: -120px;
+    right: -120px;   
+    z-index: -99;
+}
+.strujka_zayavka {
+    position: absolute;
+    bottom: -120px;
+    right: -220px;  
+}
+.opis_etap {
+    position: relative;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+    margin: 0;
+    margin-bottom: 72px;
+    width: 385px;
+    margin-left: 34px;
+}
+.cifra_etap {
+    position: absolute;
+    font-weight: 800;
+    font-size: 130px;
+    line-height: 177px;
+    letter-spacing: -0.1em;
+    color: rgba(155, 113, 0, 0.15);
+    top: -75px;
+    left: -50px;
+}
+.cifra_etap_two {
+    top: -55px;
+}
+.opis_etap_two {
+    margin-left: 316px;
+}
+.etapi_raboti {
+    position: relative;
+}
+.divan-etap {
+    position: absolute;
+    right: 0;
+    top: 70px;
+}
+.strujka_etap {
+    position: absolute;
+    bottom: 50px;
+    left: 8%;
+}
+.pagin {
+    display: none !important;
+}
+
+.slick-my-next {
+    right: -50px;
+    position: absolute;
+    top: 43%
+}
+.slick-my-prev {
+    left: -50px;
+    position: absolute;
+    top: 43%;
+}
+.slick-slide {
+    outline: none;
+}
+.zg_material {
+    position: relative;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    margin: 0 auto;
+    display: table;
+    margin-bottom: 70px;
+}
+.cifra_material {
+    position: absolute;
+    font-weight: 800;
+    font-size: 120px;
+    line-height: 163px;
+    text-align: center;
+    color: rgba(155, 113, 0, 0.15);
+    top: -65px;
+    left: -200px;
+}
+.bold_material {
+    font-weight: 900;
+}
+.opis_zg-material {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    width: 741px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.tabs__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.tabs__item {
+    border: none;
+    outline: none;
+    background: #765600;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px 45px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.tabs__item__active {
+    background: linear-gradient(180deg, #FECD4B 0%, #A57800 100%);
+}
+.tabs__item:hover {
+    border-radius: 0;
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(180deg, #FECD4B 0%, #A57800 100%);
+}
+.tabs__block {
+    display: none;
+    height: 380px;
+    background: #f5ce63;
+}
+.tabs__block_arenda {
+    display: none;
+}
+.tabs__block__active, .tabs__block_arenda__active {
+    display: block;
+}
+.slick-my-prev_1,
+.slick-my-next_1 {
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    z-index: 15;
+}
+.slick-my-next_1 {
+    left: auto;
+    right: 15%;
+}
+.ofer_tab {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+.btn_design {
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.izgotovlenie-mebeli {
+    background: #F4F4F4;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+.tabs__items_mebel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #FECD4B 0%, #A57800 100%);
+    border-radius: 50px;
+    padding: 5px;
+    width: 512px;
+    height: 42px;
+    margin: 0 auto;
+}
+.tabs__item_mebel {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 8px 55px ;
+    border-radius: 50px;
+    transition: all 0.5s ease-in-out;
+}
+.tabs__item__active_mebel {
+    transition: all 0.5s ease-in-out;
+    color: #785802;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+.wraper_mebel_prodaja {
+    margin-top: 60px;
+}
+.wraper_mebel_prodaja,
+.blok_mob {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.block_one_products {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 270px;
+    height: 395px;
+    padding-bottom: 50px;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    margin: 15px;
+    transition: all 0.5s ease-in-out;
+}
+.name_img {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 23px;
+    color: #000000;
+    margin: 0;
+    margin: 20px 0;
+    position: absolute;
+    bottom: 100px;
+    width: 249px;
+    text-align: center;
+}
+.btn_product {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 10px 42px;
+    position: absolute;
+    bottom: 20px;
+}
+.img_products {
+    margin-top: -50px;
+}
+.block_one_products:hover {
+    transition: all 0.5s ease-in-out;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 7px rgba(87, 63, 0, 0.42);
+    border-radius: 20px;
+}
+.line_product {
+    width: 237px;
+    height: 6px;
+    background: #FECD4B;
+    position: absolute;
+    bottom: 95px;
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+.block_one_products:hover .name_img {
+    transition: all 0.5s ease-in-out;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 91.18%;
+    color: #6F5000;
+}
+.block_one_products:hover .line_product {
+    transition: all 0.5s ease-in-out;
+    display: block;
+}
+.name_img_stema {
+    font-size: 23px;
+    bottom: 90px;
+}
+.block_one_products:hover .name_img_stema {
+    bottom: 90px;
+    font-size: 25px;
+}
+.block_one_products:hover .name_img_kuhna {
+    bottom: 100px;
+    font-size: 27px;
+}
+.tabs__block_mebel {
+    display: none;
+}
+.tabs__block_mebel__active {
+    display: block;
+}
+.materiali, 
+.izgotovlenie-mebeli {
+    position: relative;
+}
+.divan_material {
+    position: absolute;
+    left: 100px;
+    top: 80px;
+}
+.strujka_mebel_product {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    opacity: 0.5;
+}
+.strujka_mebel_product_two {
+    position: absolute;
+    bottom: 450px;
+    right: 100px;
+    opacity: 0.5;
+}
+.wraper_partners {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vilardo {
+    margin: 0;
+    margin: 0 115px;
+    transition: all 0.3s ease-in-out;
+}
+.vilardo:hover {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+.line_footer {
+    background: #47484B;
+    padding: 42px 0 54px 0;
+}
+.zayavka_footer {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFFFFF;
+    width: 905px;
+}
+.form_footer {
+    margin-top: 50px;
+}
+.input_footer {
+    outline: none;
+    border: none;
+    background: rgba(255, 255, 255, 0.51);
+    border-radius: 20px;
+    width: 370px;
+    height: 65px;
+    padding-left: 17px;
+    margin: 0;
+    margin-right: 30px;
+}
+.input_footer::placeholder {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.btn_footer {
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 20px 41px;
+}
+.block_zayavka_prichina_footer {
+    width: 353px;
+    height: auto;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    z-index: 99;
+}
+.block_zayavka_prichina_foote {
+    align-items: flex-start;
+    padding: 37px 35px 37px 37px;
+}
+.zg_footer {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 27px;
+}
+.opis_zg {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 7px;
+    text-align: center;
+}
+.opis_zg_ooter {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: #47484B;
+}
+.img_seti {
+    margin: 0;
+    margin-right: 30px;
+}
+.card_footer {
+    float: right;
+}
+.block_footer_position {
+    position: relative;
+    height: 710px;
+}
+.politick {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #47484B;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 100px;
+}
+.politick_prav {
+    margin-top: 10px;
+}
+#popap_1 {
+    display: none;
+}
+.popap {
+    width: 1168px;
+    height: 770px;
+    background: #FFFFFF;
+    overflow-x: hidden !important;
+    position: relative;
+}
+#form1, #form11 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 23px;
+    width: 1168px;
+    height: 770px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+#form11 {
+    height: 1100px;
+}
+#form2, #form22 {
+    position: absolute;
+    left: 200%;
+    right: 0;
+    top: 23px;
+    width: 1168px;
+    height: 920px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+#form3, #form33 {
+    position: absolute;
+    left: 200%;
+    right: 0;
+    top: 23px;
+    width: 1168px;
+    height: 760px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+#form4, #form44 {
+    position: absolute;
+    left: 200%;
+    right: 0;
+    top: 23px;
+    width: 1168px;
+    overflow: hidden;
+    height: 770px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+}
+
+.form_zakaz {
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 122.68%;
+    text-align: center;
+    letter-spacing: 0.035em;
+    width: 689px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+.form_zakaz_b {
+    margin: 0;
+}
+#progress_bar {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    width: 929px;
+    height: 33px;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 122.68%;
+    text-align: center;
+    letter-spacing: 0.035em;
+    color: #C6C6C6;
+    margin: 0 auto;
+    margin: 30px auto;
+}
+.yellow {
+    position: absolute;
+    left: 0;
+    width: 20%;
+    height: 97%;
+    background: linear-gradient(180deg, #FECD4B 0%, #A57800 100%);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    transition: all 1s ease-in-out;
+}
+.vopros_one {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    color: #8E8E8E;
+    width: 521px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+.vopros_one_m {
+    font-size: 18px;
+    line-height: 122.68%;
+    text-align: center;
+    letter-spacing: 0.035em;
+    color: #47484B;
+    width: 689px;
+    margin-top: 80px;
+}
+.wraper_conm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vibor_mebel {
+    width: 247px;
+    height: 139px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin: 0;
+    margin: 19px;
+    transition: all 0.3s ease-in-out;
+}
+.vibor_mebel_tkan {
+    height: 69px;
+}
+
+.content_btn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.opis_btn {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+    width: 103px;
+    text-align: left;
+}
+.vibor_mebel_tkan>.content_btn>.opis_btn {
+    width: 100%;
+    text-align: center;
+}
+.vibor_mebel:hover {
+    transition: all 0.3s ease-in-out;
+    background: #FECD4B;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+.vibor_mebel:hover .opis_btn {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+.vibor_mebel_tkan:hover .opis_btn {
+    font-weight: 400;
+    font-size: 20px;
+}
+.vibor_mebel_active {
+    background: #FECD4B;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+.form_img_d_b {
+    margin-top: 40px;
+}
+.btn_form_m {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 212px;
+    height: 56px;
+    background: linear-gradient(180deg, #FECD4B 0%, #A57800 100%);
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn_form_m:hover {
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(180deg, #FECD4B 0%, #5C4402 100%);
+}
+.next_page {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+.btn_form_j {
+    bottom: 200px;
+}
+.form_stoimost {
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.form-control {
+    outline: none;
+    border: none;
+    width: 570px;
+    height: 80px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 0;
+    padding-left: 18px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    -webkit-appearance: none;
+    appearance: none;
+    
+}
+.form-control::placeholder {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #8E8E8E;
+}
+.popap_zvonok {
+    display: none;
+}
+.select {
+    display: block;
+    position: relative;
+    -webkit-appearance: none;
+    appearance: none;
+    
+}
+.select option {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #8E8E8E;
+}
+.select::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-style: solid;
+    border-width: 9px 9px 0 9px;
+    border-color: #8E8E8E transparent transparent transparent;
+    top: 45%;
+    right: 1rem;
+    z-index: 1;
+    margin-top: -9px;
+    pointer-events: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.select select:focus {
+    outline: none;
+    color: #8E8E8E;
+    border-color: #8E8E8E;
+}
+.card_footer_mob {
+    display: none;
+}
+.podlojka_deva {
+    top: 250px;
+    right: 200px;
+}
+.ceni_vnutri {
+    margin-top: 300px;
+}
+.ceni_vnutri_mebel {
+    margin-top: 400px;
+}
+.tabs__items_mebel_izg {
+    width: 100%;
+    height: 67px;
+}
+.block_one_products:hover .name_img_bol {
+    font-size: 25px;
+}
+.block_mob_div {
+    display: flex;
+    align-items: center;
+}
+.tabs__item_mebel_peretyajka {
+    padding: 8px 35px;
+}
+.content_btn {
+    position: relative;
+}
+.form_img_oo {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.opla {
+    font-size: 17px;
+    width: 100%;
+}
+
+.btn_form_m_p {
+    position: relative;
+}
+.vibor_mebel:hover .opla {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+.form_img_oo {
+    margin: 0;
+}
+.vibor_mebel_nm {
+    height: 170px;
+    width: 270px;
+}
+.podlojka_kreslo_stranica {
+    top: 80px;
+    right: 250px;
+}
+.opis_zg-material_shop {
+    width: 90%;
+}
+.tabs__items_arenda {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tabs__item_arenda {
+    width: 570px;
+    height: 290px;
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 30px;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 40px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+.opis_tab {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+.podrobnee {
+    position: absolute;
+    right: 38px;
+    bottom: 18px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 91.18%;
+    color: #FFFFFF;
+    transition: all 0.5s ease-in-out;
+}
+.tabs__item_arenda_active {
+    background: #FFFFFF;
+    border-radius: 25px;
+    color: #47484B;
+    transition: all 0.5s ease-in-out;
+}
+.tabs__item_arenda_active>.opis_tab {
+    color: #47484B;
+    transition: all 0.5s ease-in-out;
+}
+.tabs__item_arenda_active>.podrobnee {
+    color: #47484B;
+    transition: all 0.5s ease-in-out;
+}
+.tabs__block_arenda {
+    font-size: 20px;
+    line-height: 37px;
+    color: #FFFFFF;
+    width: 75%;
+    height: 580px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+.btn_arenda_tab {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 17px 45px;
+}
+.block_yellow_shop {
+    background: linear-gradient(180deg, #FECD4B 0%, #A57800 100%);
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.tabs__body_arenda {
+    padding-top: 70px;
+}
+.block_usluga_one_arenda {
+    flex-direction: column;
+    height: 350px;
+}
+.opis_img_tt {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    width: 90%;
+}
+.opis_pochta_arenda {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 41px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    justify-content: center;
+}
+.btn_arenda_pp {
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 34px;
+    color: #000000;
+    border-bottom: 1px solid #000;
+    margin-left: 10px;
+}
+.o_compannii, .h2o_compannii {
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+}
+.h2o_compannii {
+    margin-top: 20px;
+    color: #fff;
+}
+.opis_h1_o_kompanii {
+    width: 670px;
+}
+.podlojka_deva_kop {
+    top: 350px;
+    right: 0;
+}
+.opis_zg-material_shop_kompani {
+    color: #fff;
+    text-align: left;
+}
+.tabs__block_arenda__active_olll, .opis_zg-material_shop_kompani {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+    color: #FFFFFF;
+    text-align: left;
+    width: 100%;
+}
+.tabs__block_arenda__active_olll {
+    width: 470px;
+}
+.wraper_o_kompanii {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.block_right_footer_nn {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu_karta  li ul {
+    position: relative;
+    list-style: none;
+    margin-bottom: 20px;
+}
+.menu_karta ul li a {
+    color: #000;
+    padding: 0;
+}
+.menu_karta ul li a:hover {
+    color: #f5ce63;
+    padding: 0;
+    border: none;
+}
+
+.up {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 100;
+}
+
+
+
+.wraper_ove_materials, .one_block_materials {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+.block_m_one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+.opis_materials_block {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #47484B;
+}
+.blon_v_one {
+    position: relative;
+    width: 270px;
+    height: 144px;
+    border: 2px solid #47484B;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background: none;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+.position_m {
+    position: absolute;
+    right: -70px;
+    transition: all 0.5s ease-in-out;
+}
+.blon_v_one:hover .position_m {
+    transition: all 0.5s ease-in-out;
+    right: 0;
+}
+
+
+
+.opis_img_utp {
+    width: 100%;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 36px;
+    margin: 0;
+    margin-bottom: 90px;
+    margin-right: 120px;
+}
+.wraper_pod {
+    display: flex;
+    align-items: center;
+}
+.img_podarok {
+    margin-top: -150px;
+    margin-left: -100px;
+    width: 300px;
+}
+.yellow_bg {
+    color: #A57800;
+}
+
+
+
+
+
+
+
+/* 1200px - 1550px */
+@media screen and (max-width: 1550px) {
+	.container {
+        width: 1050px;
+        margin: 0 auto;
+        padding: 0;
+    }  
+    .menu_item {
+        font-weight: 800;
+        font-size: 15px;
+    }
+    .adres_text {
+        font-weight: 600;
+        font-size: 14px;
+        width: 150px;
+    }
+    .podlojka {
+        z-index: -99;
+        right: 30px;
+        width: 700px;
+    }
+    .twentytwenty-container {
+        right: -40px;
+        z-index: -99;
+        width: 700px;
+        margin-left: -260px;
+        top: 0;
+    }
+    .twentytwenty-container img {
+        max-width: 110% !important;
+        width: 750px !important;
+    }
+    .line_ofer {
+        width: 120px;
+        height: 20px;
+    }
+    h1 {
+        font-size: 35px;
+        line-height: 45px;
+        letter-spacing: 0.035em;
+        width: 624px;
+    }
+    .opis_img {
+        font-size: 18px;
+        line-height: 23px;
+        width: 285px;
+        margin-left: 20px;
+    }
+    .usluga_img {
+        width: 50%;
+    }
+    .ugol, .ugol_rotate {
+        width: 200px;
+    }
+    .ugol_rotate {
+        top: -130px;
+    }
+    .ugol {
+        bottom: 20px;
+        right: 20px;
+    }
+    .block_usluga_one {
+        padding: 11px;
+        width: 505px;
+        margin: 10px;
+    }
+    .wraper_line_uslugi {
+        margin-bottom: 0;
+    }
+    .btn_uslugi {
+        margin-top: 70px;
+    }
+    .block_one_ceni {
+        padding: 20px 10px 0 10px;
+        width: 256px;
+        height: 253px;
+        margin-left: 30px;
+        margin-bottom: 15px;
+    }
+    .cena_img {
+        width: 65%;
+    }
+    .cena_img_problem {
+        width: 40%;
+    }
+    .podlojka_cena {
+        top: 140px;
+        left: 0;
+        width: 680px;
+    }
+    .podlojka_kreslo {
+        top: 400px;
+        left: 220px;
+        width: 400px;
+    }
+    .btn_cena {
+        left: 400px;
+    }
+    .dostupno {
+        top: 130px;
+        
+    }
+    .opis_etap {
+        font-size: 20px;
+        line-height: 24px;
+        width: 285px;
+        margin-bottom: 52px;
+    }
+    .cifra_etap {
+        font-size: 100px;
+        line-height: 177px;
+        top: -80px;
+    }
+    .cifra_etap_two  {
+        top: -70px;
+    }
+    .strujka_etap {
+        width: 100px;
+        bottom: 0;
+        left: 3%;
+    }
+    .divan-etap {
+        top: 60px;
+        width: 800px;
+    }
+    .strujka_zayavka {
+        width: 100px;
+        bottom: -60px;
+        right: -180px;
+    }
+    .divan_material {
+        left: 20px;
+        top: 100px;
+        width: 150px;
+    }
+    .tabs__item {
+        font-size: 16px;
+        padding: 10px 35px;
+    }
+    .tabs__block {
+        height: auto;
+    }
+    .slick-my-prev_1, .slick-my-next_1 {
+        top: 41%;
+        width: 55px;
+    }
+    .cifra_material {
+        font-size: 100px;
+        line-height: 163px;
+        left: -180px;
+    }
+    .ofer_tab {
+        margin-top: 40px;
+    }
+    .strujka_mebel_product {
+        left: 50px;
+        width: 100px;
+    }
+    .block_one_products {
+        width: 250px;
+        margin: 5px;
+    }
+    .line_product {
+        width: 187px;
+    }
+    .img_products {
+        margin-top: -50px;
+        width: 55%;
+    }
+    .vilardo {
+        width: 50%;
+        margin: 0;
+        margin: 0 85px;
+    }
+    .strujka_mebel_product_two {
+        width: 100px;
+    }
+    .wraper_ceni {
+        margin-right: -75px;
+    }
+    .strujka {
+        top: -20px;
+        left: 2%;
+        width: 100px;
+    }
+    .btn_form_x {
+        width: 300px;
+    }
+    .podlojka_deva {
+        width: auto;
+        right: 0;
+        top: 200px;
+    }
+    .podlojka_deva>img {
+        width: 750px;
+    }
+    .ceni_vnutri_mebel {
+        margin-top: 300px;
+    }
+    .tabs__item_mebel_peretyajka {
+        padding: 8px 25px;
+    }
+    #form11 {
+        width: 100%;
+    }
+    .tabs__item_arenda {
+        width: 470px;
+    }
+    .ugol_z {
+        width: 350px;
+    }
+    .podlojka_deva_kop {
+        top: 380px;
+    }
+    .podlojka_deva_kop>img {
+        width: 500px;
+    }
+    .podlojka_komp {
+        right: 0;
+        top: 300px;
+        width: 600px;
+    }
+    .opis_h1_o_kompanii {
+        width: 680px;
+    }
+    .o_lll {
+        width: 600px;
+    }
+    .opis_img_tt {
+        width: 100%;
+    }
+    .tabs__item_arenda {
+        font-size: 25px;
+    }
+    .opis_tab {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+
+    .blon_v_one {
+        position: relative;
+        width: 210px;
+        height: 144px;
+    }
+    .position_m {
+        right: -90px;
+    }
+    
+    .opis_img_utp {
+        font-size: 20px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    
+
+
+
+}
+
+
+
+  /* 992px - 1200px */
+  @media screen and (max-width: 1200px) {
+	.container{
+        width: 960px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .block_adres_mob {
+        display: none;
+    }
+    .menu_item {
+        padding: 17px 20px;
+    }
+    h1 {
+        font-size: 30px;
+        line-height: 35px;
+        letter-spacing: 0.035em;
+        width: 524px;
+    }
+    .line_ofer {
+        width: 60px;
+        height: 10px;
+        left: -10px;
+        top: -30px;
+    }
+    .opis_h1 {
+        font-size: 17px;
+        line-height: 20px;
+        width: 387px;
+    }
+    .btn {
+        padding: 14px 11px;
+    }
+    .ili {
+        font-size: 40px;
+        bottom: -80px;
+        right: 240px;
+    }
+    .twentytwenty-container {
+        right: -70px;
+        z-index: -99;
+        width: 600px;
+        margin-left: -260px;
+        top: 20px;
+    }
+    .twentytwenty-container img {
+        max-width: 100% !important;
+        width: 650px !important;
+    }
+    .podlojka {
+        right: 30px;
+        width: 500px;
+        top: 170px;
+    }
+    .ili_btn {
+        font-size: 17px;
+        bottom: -70px;
+        right: 140px;
+    }
+    .ugol_rotate {
+        top: -100px;
+        right: 0;
+        left: auto;
+        transform: rotate(270deg);
+        width: 150px;
+    }
+    .usluga_img {
+        width: 30%;
+    }
+    .opis_img {
+        font-size: 16px;
+        width: 255px;
+        margin-left: 10px;
+    }
+    .ugol {
+        width: 150px;
+        bottom: -50px;
+        right: auto;
+        left: 0;
+        transform: rotate(90deg);
+    }
+    .strujka {
+        top: -60px;
+        left: auto;
+        width: 100px;
+        right: 5%;
+    }
+    .dostupno {
+        font-size: 70px;
+        top: 130px;
+        left: 5%;
+    }
+    .podlojka_kreslo {
+        top: 380px;
+        left: 50px;
+        width: 400px;
+    }
+    .podlojka_cena {
+        top: 120px;
+        left: 0;
+        width: 680px;
+    }
+    .btn_cena {
+        left: 200px;
+        bottom: 25px;
+    }
+    .wraper_ceni {
+        margin-right: 0;
+    }
+    .block_one_ceni {
+        padding: 20px 10px 0 10px;
+        width: 236px;
+        height: 233px;
+        margin-left: 15px;
+        margin-bottom: 25px;
+    }
+    .opis_cena {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+        width: 205px;
+    }
+    .six {
+        font-size: 160px;
+        left: 0;
+    }
+    .block_zayavka_prichina {
+        margin-left: 55px;
+    }
+    .strujka_zayavka {
+        width: 100px;
+        bottom: auto;
+        right: 0;
+        top: -90px;
+    }
+    .opis_etap_two {
+        margin-left: 34px;
+    }
+    .opis_etap {
+        width: 285px;
+        margin-bottom: 82px;
+        margin-left: 64px;
+    }
+    .strujka_etap {
+        bottom: -150px;
+        left: 3%;
+    }
+    .divan-etap {
+        top: 120px;
+    }
+    .slick-my-prev {
+        left: 20px;
+        z-index: 88;
+    }
+    .slick-my-next {
+        right: 20px;
+    }
+    .materioa {
+        margin-top: 60px;
+    }
+    .divan_material {
+        left: auto;
+        top: 120px;
+        width: 150px;
+        right: 20px;
+    }
+    .strujka_mebel_product {
+        top: 20px;
+    }
+    .block_one_products {
+        width: 220px;
+        margin: 5px;
+        height: 350px;
+    }
+    .img_products {
+        margin-top: -50px;
+        width: 45%;
+    }
+    .name_img_stema, .name_img {
+        font-size: 20px;
+        bottom: 85px;
+    }
+    .block_one_products:hover .name_img  {
+        bottom: 100px;
+        font-size: 22px;
+    }
+    
+    .block_one_products:hover .name_img_stema  {
+        bottom: 83px;
+        font-size: 22px;
+    }
+    .btn_product {
+        font-size: 16px;
+        line-height: 22px;
+        padding: 14px 22px;
+    }
+    .line_product {
+        bottom: 80px;
+    }
+    .name_img_stema {
+        font-size: 19px;
+    }
+    .block_one_products:hover .name_img_stema {
+        bottom: 83px;
+        font-size: 17px;
+    }
+    .name_img {
+        width: 220px;
+    }
+    .strujka_mebel_product_two {
+        bottom: 300px;
+        right: 50px;
+    }
+    .vilardo {
+        width: 250px;
+        margin: 0 90px;
+    }
+    .zayavka_footer {
+        font-size: 25px;
+        line-height: 31px;
+        width: 685px;
+    }
+    .input_footer {
+        width: 270px;
+        height: 52px;
+    }
+    .prichina {
+        overflow-x: hidden ;
+    }
+    .ugol_zayanka {
+        transform: rotate(
+    180deg
+    );
+        position: absolute;
+        bottom: auto;
+        right: auto;
+        z-index: -99;
+        top: -100px;
+        left: -100px;
+    }
+    .popap {
+        width: 100%;
+    }
+    .vibor_mebel {
+        width: 257px;
+        margin: 9px;
+    }
+    .progress_bar {
+        width: 100%;
+    }
+    #form1,
+    #form2,
+    #form3,
+    #form4 {
+        width: 100%;
+    }
+    .vopros_one {
+        width: 100%;
+        text-align: center;
+    }
+    #form2 {
+        height: 820px;
+    }
+    .ceni_vnutri {
+        margin-top: 200px;
+    }
+    .podlojka_deva {
+        width: 200px;
+        right: 300px;
+        top: 250px;
+    }
+    .podlojka_deva>img {
+        width: 470px;
+    }
+    .tabs__item_mebel_peretyajka {
+        padding: 8px 21px;
+    }
+    #form11, 
+    #form22,
+    #form33,
+    #form44 {
+        width: 100%;
+    }
+    .ugol_z {
+        display: none;
+    }
+    .tabs__block_arenda {
+        width: 100%;
+        height: 600px;
+    }
+    .podlojka_deva_kop {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: right;
+        flex-direction: column;
+    }
+    .podlojka_deva_kop>img {
+        width: 500px; 
+        display: block;
+    }
+    .opis_h1_o_kompanii {
+        width: 100%;
+    }
+    .wraper_cvn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .podlojka_komp {
+        top: 350px;
+    }
+    
+    
+    .blon_v_one {
+        width: 200px;
+    }
+    .opis_img_utp {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+    .container {
+      width: 720px;
+    }
+    .logo>img {
+        width: 193px;
+        margin-left: 0px;
+        height: 90px;
+    }
+    .zvonok {
+        margin-left: 20px;
+    }
+    .menu_item {
+        padding: 22px 10px;
+        font-size: 13px;
+    }
+    .whatsapp_text {
+        margin-left: 10px;
+        color: #47484B;
+        width: 100px;
+    }
+    .twentytwenty-container {
+        right: 0;
+        z-index: -99;
+        width: 600px;
+        margin-left: -370px;
+        top: 130px;
+    }
+    .ili {
+        right: 340px;
+    }
+    .ili_btn {
+        right: 260px;
+    }
+    .podlojka {
+        top: 300px;
+    }
+    .btn {
+        z-index: 99;
+    }
+    .opis_img {
+        font-size: 14px;
+        line-height: 18px;
+        width: 100%;
+        margin-left: 3px;
+    }
+    .block_usluga_one {
+        padding: 18px 10px;
+        width: 350px;
+        margin: 10px;
+        height: 110px;
+    }
+    .btn_uslugi {
+        margin-top: 30px;
+        font-size: 16px;
+    }
+    .podlojka_cena {
+        top: 80px;
+        left: 0;
+        width: auto;
+        height: 900px;
+    }
+    .podlojka_kreslo {
+        display: none;
+    }
+    .wraper_ceni {
+        justify-content: center;
+    }
+    .dostupno {
+        display: none;
+    }
+    .btn_cena {
+        bottom: -50px;
+        left: 37%;
+    }
+    .btn_usluga_k {
+        bottom: 10px;
+        right: 10px;
+    }
+    .block_one_prichina {
+        width: 169px;
+        height: 134px;
+        margin: 4px;
+        padding: 10px;
+    }
+    .form_input {
+        width: 230px;
+        height: 44px;
+    }
+    .block_zayavka_prichina {
+        width: 270px;
+        height: 437px;
+    }
+    .opis_h3_zayavka {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 60px;
+    }
+    .prichina {
+        padding-bottom: 50px;
+    }
+    .etap_moz {
+        margin-top: 60px;
+    }
+    .divan-etap {
+        top: 220px;
+        width: 500px;
+    }
+    .strujka_etap {
+        bottom: -150px;
+        left: auto;
+        right: 30px;
+    }
+    .slick-my-prev,
+    .slick-my-next {
+        top: 39%;
+    }
+    .cifra_material {
+        font-size: 80px;
+        left: -100px;
+    }
+    .opis_zg-material {
+        width: 100%;
+    }
+    .tabs__item {
+        font-size: 15px;
+        padding: 10px 23px;
+    }
+    .tabs__item_mob {
+        padding: 10px 9px;
+    }
+    .slick-my-prev_1, .slick-my-next_1 {
+        top: 38%;
+    }
+    .ofer_tab {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .wraper_mebel_prodaja {
+        flex-direction: column;
+    }
+    .block_one_products {
+        width: 260px;
+        margin: 5px;
+        height: 350px;
+    }
+    .input_footer {
+        width: 230px;
+        height: 52px;
+        margin-right: 10px;
+    }
+    .block_zayavka_prichina {
+        margin-left: 5px;
+        height: 507px;
+    }
+    .block_zayavka_prichina_foote {
+        align-items: flex-start;
+        padding: 7px 5px 7px 20px;
+    }
+    .card_footer {
+        float: right;
+        display: none;
+    }
+    .card_footer_mob {
+        display: block;
+    }
+    .materiali, .izgotovlenie-mebeli {
+        position: relative;
+        overflow: hidden;
+    }
+    .block_zayavka_prichina {
+        height: auto;
+    }
+
+
+
+    #progress_bar {
+        width: 90%;
+    }
+    .vibor_mebel {
+        width: 207px;
+        margin: 9px;
+    }
+    .podlojka_deva>img {
+        width: 600px;
+        
+    } 
+    .podlojka_deva {
+        width: auto;
+        right: 0;
+        top: 350px;
+    }
+    .tabs__items_mebel_izg {
+        width: 100%;
+        height: 97px;
+        display: flex;
+        flex-direction: column;
+    }
+    .tabs__item_mebel_peretyajka {
+        width: 230px;
+    }
+    #form11, 
+    #form22,
+    #form33,
+    #form44 {
+        width: 100%;
+    }
+
+    .tabs__item_arenda {
+        width: 350px;
+        padding: 10px;
+    }
+    .block_usluga_one_arenda {
+        height: 250px;
+    }
+    .opis_pochta_arenda, .btn_arenda_pp {
+        font-size: 20px;
+    }
+
+    .podlojka_deva_kop {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: right;
+        flex-direction: column;
+    }
+    .podlojka_deva_kop>img {
+        width: 600px;
+        display: block;
+        margin-top: -100px;
+    }
+    .wraper_cvn {
+        flex-direction: column;
+    }
+    .podlojka_komp {
+        display: none;
+    }
+    .opis_zg-material_shop_kompani, 
+    .tabs__block_arenda__active_olll {
+        font-size: 18px;
+        line-height: 25px;
+        height: auto;
+    }
+    .wraper_o_kompanii {
+        flex-direction: column;
+    }
+    .btn_arenda_tab_o_komp {
+        bottom: -80px;
+    }
+    .o_lll {
+        margin-top: 50px;
+    }
+    
+    
+    
+    .wraper_ove_materials {
+        flex-direction: column;
+    }
+    .blon_v_one {
+        position: relative;
+        width: 270px;
+    }
+    
+    .opis_img_utp {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+    .hamburglar {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .menu_wraper {
+        height: 50px;
+    }
+    .shop_shering {
+        position: absolute;
+        top: 85px;
+        left: 0;
+    }
+    .wraper_ofer {
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    h1 {
+        text-align: center;
+        font-size: 26px;
+        line-height: 35px;
+        letter-spacing: 0.035em;
+        width: 100%;
+    }
+    .opis_h1 {
+        font-size: 17px;
+        line-height: 20px;
+        width: 387px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .wrapr_btn {
+        display: flex;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .podlojka {
+        top: 350px;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+    .ili {
+        right: 50px;
+        bottom: -15px;
+    }
+    .ili_btn {
+        bottom: -20px;
+        right: 0;
+    }
+    .twentytwenty-container {
+        right: 0;
+        z-index: -99;
+        width: 540px;
+        margin-left: 0;
+        top: 50px;
+    }
+    .podlojka_cena {
+        display: none;
+    }
+    .h2_ceni {
+        margin-bottom: 60px;
+    }
+    .wraper_prichina {
+        flex-direction: column;
+    }
+    .block_zayavka_prichina {
+        width: 350px;
+    }
+    .wraper_block_one_etap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .divan-etap {
+        top: 360px;
+        width: 400px;
+    }
+    .opis_etap {
+        width: 185px;
+        margin-bottom: 62px;
+        margin-left: 44px;
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .zg_material {
+        position: relative;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    .tabs__items {
+        margin-bottom: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tabs__items_mobb {
+        position: absolute;
+        right: 3%;
+        top: 530px;
+        align-items: flex-end;
+    }
+    .tabs__item {
+        font-size: 15px;
+        padding: 10px 83px;
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    .tabs__item_mob {
+        padding: 10px 9px;
+        text-align: center;
+    }
+    .slick-my-prev_1, .slick-my-next_1 {
+        top: 38%;
+    }
+    .h2_ceni {
+        margin-bottom: 60px;
+        text-align: center;
+        width: 100%;
+    }
+    .vilardo {
+        width: 200px;
+        margin: 0 10px;
+    }
+    .zayavka_footer {
+        font-size: 21px;
+        line-height: 26px;
+        width: 100%;
+        text-align: center;
+    }
+    .input_footer {
+        width: 100%;
+        height: 52px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .btn_footer {
+        display: block;
+        margin: 0 auto;
+    }
+    .block_zayavka_prichina {
+        position: relative;
+        height: auto;
+        width: 100%;
+    }
+    .block_footer_position {
+        height: auto;
+    }
+    .card_footer_mob {
+        margin-top: 50px;
+    }
+    .politick {
+        margin-top: 30px;
+    }
+    .politick_prav {
+        margin-top: 10px;
+    }
+    .btn {
+        z-index: 9;
+    }
+    .wraper_line_uslugi {
+        flex-direction: column;
+    }
+    .block_usluga_one {
+        width: 100%;
+        height: auto;
+    }
+    .opis_img {
+        font-size: 18px;
+        margin-left: 19px;
+        width: 100%;
+    }
+    .vibor_mebel {
+        width: 147px;
+        margin: 9px;
+    }
+    .form_img_d {
+        display: none;
+    }
+    .form-control {
+        outline: none;
+        border: none;
+        width: 80%;
+        height: 50px;
+    }
+    .vopros_one {
+        width: 90%;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .form_zakaz {
+        font-size: 29px;
+        line-height: 122.68%;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 90px;
+    }
+    .form_zakaz_b {
+        margin-bottom: 30px;
+    }
+    .form_stoimost {
+        width: 500px;
+    }
+    .select {
+        width: 80%;
+    }
+    .form-control_m {
+        width: 100%;
+    }
+    .podlojka_deva {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 50px;
+    }
+    .podlojka_deva>img {
+        width: 100%;
+    }
+
+    .tabs__item_mebel_peretyajka {
+        width: 170px;
+    }
+    .form_img_oo {
+        display: none;
+    }
+    .tabs__items_arenda {
+        flex-direction: column;
+    }
+    .tabs__item_arenda {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .tabs__block_arenda {
+        width: 100%;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .tabs__body_arenda {
+        padding-top: 10px;
+    }
+    .tabs__block_arenda {
+        height: 400px;
+    }
+    .block_yellow_shop {
+        padding-bottom: 0;
+    }
+    .h2_aren {
+        margin-top: 70px;
+    }
+    .block_usluga_one_arenda {
+        padding: 5px;
+    }
+    .opis_h1_o_kompanii {
+        width: 100%;
+    }
+    .tabs__block_arenda__active_olll {
+        height: auto;
+    }
+    .o_lll {
+        margin-top: 80px;
+    }
+    .navigation a {
+        color: #202020;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .blon_v_one {
+        width: 250px;
+    }
+    
+    
+    .img_podarok {
+        margin-top: -150px;
+        width: 300px;
+    }
+    .opis_img_utp {
+        width: 100%;
+        margin-left: 0;
+    }
+
+}
+
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+	.container {
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .uslugi_h2_mm {
+        margin-top: 100px;
+    }
+    .zvonok {
+        display: none;
+    }
+    .logo>img {
+        width: 153px;
+        margin-left: 0px;
+        height: 90px;
+    }
+    .adress {
+        display: none;
+    }
+    .opis_h1 {
+        width: 100%;
+    }
+    .twentytwenty-container, .podlojka {
+        display: none;
+    }
+    .ili {
+        right: 100px;
+        bottom: -60px;
+    }
+    .ili_btn {
+        bottom: -50px;
+        right: 0;
+    }
+    .ugol {
+        display: none;
+    }
+    .wraper_ceni {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .block_one_ceni {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .btn_cena {
+        bottom: -50px;
+        left: 2%;
+        right: 2%;
+    }
+    .strujka_zayavka  {
+        display: none;
+    }
+    .block_zayabka {
+        padding-bottom: 20px;
+    }
+    .wraper_block_one_etap {
+        flex-direction: column;
+    }
+    .opis_etap {
+        width: 100%;
+        margin-bottom: 62px;
+        margin-left: 0;
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .cifra_etap {
+        left: -20px;
+    }
+    .cifra_etap_two {
+        top: -70px;
+        left: auto;
+        right: 20px;
+    }
+    .cifra_etap_two_mob {
+        left: -20px;
+    }
+    .divan-etap {
+        top: 550px;
+        width: 350px;
+    }
+    .materioa {
+        margin-top: 30px;
+        font-size: 24px;
+        line-height: 25px;
+        width: 100%;
+    }
+    .divan_material {
+        top: 100px;
+    }
+    .cifra_material {
+        font-size: 80px;
+        left: 0;
+    }
+    .tabs__items {
+        align-items: center;
+    }
+    .tabs__items_mobb {
+        position: relative;
+        top: auto;
+        align-items: center;
+        right: auto;
+    }
+    .material_mob {
+        height: 150px !important;
+    }
+    .ofer_tab {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .tabs__items_mebel {
+        height: 52px;
+        width: 100%;
+    }
+    .tabs__item_mebel {
+        padding: 8px 14px;
+    }
+    .blok_mob {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .strujka_mebel_product_two {
+        display: none;
+    }
+    .img_products {
+        width: 55%;
+    }
+    .block_one_products:hover .name_img_stema {
+        bottom: 83px;
+        font-size: 20px;
+    }
+    .wraper_partners {
+        flex-direction: column;
+    }
+    .izgotovlenie-mebeli_bez_mebeli {
+        background: none;
+        margin-top: 80px;
+    }
+    .strujka_mebel_product {
+        display: none;
+    }
+    .vilardo {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .strujka_mebel_product_two {
+        bottom: 0;
+        right: 50px;
+    }
+    .form_zakaz {
+        font-size: 19px;
+        margin-top: 40px;
+    }
+    .vopros_one {
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .wraper_conm {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .form_stoimost {
+        width: 100%;
+    }
+    .vibor_mebel {
+        width: 100%;
+        margin: 9px auto;
+        height: 50px;
+    }
+    #form1 {
+        height: 820px;
+    }
+    #form2 {
+        height: 1160px;
+    }
+    .vopros_one_m {
+        margin: 0;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+    .opis_btn {
+        width: 100%;
+        text-align: center;
+    }
+    .popap_zvonok {
+        width: 100%;
+    }
+    .block_mob_div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .tabs__items_mebel {
+        height: auto;
+        width: 100%;
+    }
+    .tabs__item_mebel_peretyajka {
+        width: 100%;
+    }
+    #form22 {
+        height: 1150px;
+    }
+    .tabs__block_arenda {
+        padding-bottom: 130px;
+        height: auto;
+    }
+    .opis_img_tt {
+        font-size: 16px;
+        margin: 0;
+    }
+    .opis_img_vv {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .block_usluga_one_arenda {
+        padding: 20px 2px;
+    }
+    .opis_pochta_arenda, .btn_arenda_pp {
+        flex-direction: column;
+        font-size: 20px;
+    }
+    .o_lll {
+        width: 100%;
+    }
+    .tabs__block_arenda__active_olll {
+        height: auto;
+        padding: 0;
+    }
+    .block_yellow_shop_pp {
+        padding: 20px 0;
+    }
+    .navigation a {
+        color: #202020;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .ili_btn_desigm {
+        line-height: 20px;
+        bottom: -70px;
+    }
+    .block_footer_position {
+        margin-top: -70px;
+    }
+    .ceni_vnutri_mebel {
+        margin-top: 100px;
+    }
+    .primeri-rabot {
+        margin-top: 200px;
+    }
+    .tabs__item_arenda {
+        font-size: 18px;
+    }
+    .up {
+        right: 5px;
+        bottom: 10px;
+    }
+    
+    
+    .one_block_materials {
+        flex-direction: column;
+    }
+    .block_m_one {
+        width: 100%;
+    }
+    .one_block_materials {
+        width: 100%;
+    }
+    
+    .menu_karta li ul {
+        padding: 0;
+        padding-left: 5px;
+        list-style: revert;
+    }
+    
+    
+    .wraper_pod {
+        flex-direction: column-reverse;
+    }
+    .img_podarok {
+        margin-top: -50px;
+        width: 200px;
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+    .opis_img_utp {
+        width: 100%;
+        margin-left: 0;
+    }
+    .adres_text {
+        text-align: center;
+    }
+}
